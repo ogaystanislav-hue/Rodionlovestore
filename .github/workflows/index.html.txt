@@ -1,0 +1,157 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дмитрий ❤️ Родион</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #19152f, #633b78, #d14f91);
+    min-height: 100vh;
+}
+
+header {
+    padding: 70px 20px 40px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+.heart {
+    font-size: 60px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+.card {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 35px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+button {
+    background: #ff5fb7;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff82ca;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer {
+    padding: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="heart">❤️</div>
+    <h1>Дмитрий и Родион</h1>
+    <div class="subtitle">
+        История двух людей, которые нашли друг друга
+    </div>
+</header>
+
+<div class="card">
+
+<h2>💜 Их история</h2>
+
+<p>
+Дмитрий и Родион познакомились совершенно случайно.
+Сначала они просто разговаривали и постепенно стали друзьями.
+</p>
+
+<p>
+Они много гуляли, шутили, обсуждали музыку,
+фильмы и свои мечты.
+</p>
+
+<p>
+Со временем они поняли, что стали очень важны
+друг для друга.
+</p>
+
+<p>
+Их отношения строились на доверии, уважении,
+поддержке и искренних чувствах.
+</p>
+
+<p>
+❤️ Их история только начинается...
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🌙 Особенный момент</h2>
+
+<p>
+Однажды вечером Дмитрий и Родион долго разговаривали
+и поняли, что больше не хотят скрывать свои чувства.
+</p>
+
+<button onclick="showMessage()">
+Открыть послание ❤️
+</button>
+
+<div id="message"></div>
+
+</div>
+
+<footer>
+Дмитрий ❤️ Родион<br>
+История о любви, доверии и поддержке
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+    "❤️ Самые важные встречи иногда происходят совершенно случайно.";
+}
+</script>
+
+</body>
+</html>
